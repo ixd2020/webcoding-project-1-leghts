@@ -1,0 +1,289 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: Black;
+  padding-left: 30px;
+  padding-top: 25px;
+}
+
+a {
+  padding: none;
+  text-decoration: none;
+  display: block;
+  color: black;
+  text-align: right;
+  padding: 25px 50px;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: none;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  border: 1.5px solid black;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+}
+
+li {
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 50px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: white;
+  background-color: black;
+  
+}
+
+li a:hover:not(.active) {
+  background-color: none;
+}
+
+.active {
+  background-color: white;
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  border: 1.5px solid black;
+  background-color: none;
+  color: black;
+  padding: 15px;
+}
+
+.column {
+  float: right;
+  padding: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.menu {
+  width: 35%;
+  
+}
+
+.content {
+  width: 65%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: none;
+  color: none;
+}
+
+.menu li:hover {
+  color: white;
+  background-color: black;
+  
+}
+
+.artworks ul {
+  border: none;
+}
+
+.works a {
+  text-align: right;
+  padding: 10px 10px;
+  transition-duration: 0.3s;
+}
+.works a:hover{
+  transition-duration: 0.3s;
+}
+
+.works {
+  text-align: right;
+  width: 70%;
+  display: block;
+  border: 1px solid black;
+  background-color: none;
+  float: right;
+}
+
+  .container {
+  position: center;
+  width: 100%;
+}
+
+.homeimage {
+  opacity: 1;
+  display: block;
+  width: 98%;
+  margin: 0 auto;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .homeimage {
+  opacity: 0.6;
+}
+
+.container:hover .middle {
+  opacity: 2;
+}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.indextext {
+  float: left;
+  padding-left: 170px;
+  padding-right: 30px;
+  width: 55%;
+}
+
+.pfp {
+padding-left: 50px;
+}
+
+.logo {
+  padding-left: 65px;
+  padding-top: 35px;
+}
+
+.navspace {
+  float: right;
+  padding-top: 100px;
+}
+
+.navspace a{
+  transition-duration: 0.3s;
+}
+
+.navspace a:hover{
+  transition-duration: 0.2s;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.b1 {
+  float: left;
+  width: 55%;
+  padding-left: 200px;
+  padding-right: 10px;
+  height: 400px;
+}
+
+
+.lm a{ 
+  color: white;
+  float: left;
+  border: 1px solid black;
+  background-color: black;
+}
+
+.lm a:hover {
+  color: black;
+  background-color: white;
+  transition-duration: 0.3s;
+  text-decoration: underline;
+
+}
+
+.hi {
+  float: left;
+  width: 50%;
+  padding-left: 200px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.hi1 {
+  float: left;
+  width: 50%;
+  padding-left: 0px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navt {
+  float: right;
+}
+.navt a{
+  transition-duration: 0.3s;
+}
+
+.navt a:hover{
+  transition-duration: 0.2s;
+}
+
+.w {
+  padding-right: 300px;
+}
+
+ol {
+  text-alignment: left;
+  list-style-type: lower-number;
+  width: 70%;
+}
+
